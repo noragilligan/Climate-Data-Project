@@ -114,13 +114,19 @@ Based on the December values alone (which is a very limited amount of data), the
 
 [Results of the queries](query-results)
 
-Links to exact line of required usage of CTE, comprehension, etc.
+Links to exact lines of required usage of CTE, comprehension, etc:
+
 [View](https://github.com/nyu-csci-ua-0480-003-fall-2019/noragilligan-mini-project/blob/55e032212967082cd8cf6e2462584b93ce179ba6/queries.sql#L2)
+
 [CTE](https://github.com/nyu-csci-ua-0480-003-fall-2019/noragilligan-mini-project/blob/55e032212967082cd8cf6e2462584b93ce179ba6/queries.sql#L23)
 
 ## 5. Research
 
-* __TODO__: Link to documentation / site of new concept or technology used
-* __TODO__: Describe what you'll be using this technology for
-* [__TODO__: Link to application of research in repository](name-of-some-file)
+Link to documentation / site of new concept or technology used:
+https://www.postgresql.org/docs/current/tablefunc.html
+
+* Describe what you'll be using this technology for
+Look at the seasonal data at the begining of each decade, with each row being its own season and the columns being the decades.
+
+* [application of research](research.sql)
 
