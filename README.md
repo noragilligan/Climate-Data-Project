@@ -4,7 +4,7 @@
 
 ### Project Description
 
-Looking at environmental data over the course of the last 140 years to detect if there is a turning point in yearly temperatures being less than the baseline to being greater than the baseline.
+Looking at environmental data over the course of the last 140 years to detect if there is a turning point in yearly temperatures being less than the baseline to being greater than the baseline, if any month or season seems to be effected by global warming more than others, and if, based on december temperatures from one year to the next, we see a steady increase in temperature.
 
 ### Data Source or Description of Data 
 
@@ -58,12 +58,65 @@ Populate Tables:
 
 ## 4. Analysis
 
-__TODO__: Describe the goals of your analysis.
+Goals of analysis:
+* see if there is a notable turning point year in which temperatures went from being primarily below the baseline to primarily greater than the base line.
+* see if there is there any month or season that has an abnormal (whethere this be larger or smaller than the rest) number of years in which it is greater than its baseline
+* see if the increase in temperature appear to be happen consistantly from one year to the next by looking at dec and prev_dec values
 
-[__TODO__: Link to analysis script in repository (you can create any file you like)](queries.sql)
+[Link to analysis script](queries.sql)
+
+Results of analysis:
+
+* see if there is a notable turning point year in which temperatures went from being primarily below the baseline to primarily greater than the base line.
+In 1938, the value of dn euqal to the baseline.
+There are 57 years before 1938 with recorded dn values, 57 of these were below the baseline.
+There are 80 years after 1938 with recorded dn values, 59 of these were above the baseine.
+
+There was no year in which the value of jd was equal to the baseline.
+
+The last year with a dn value below the baseline was 1976 and the first year with a dn value above the baseline was 1940.
+The last year with a jd value below the baseline was 1976 and the first year with a jd value above the baseline was 1940.
+This suggests a turning point within the years of 1940 to 1976. Note that 1938, the year in which dn was equal to the base line, is slightly outside of this window.
+
+* see if there is there any month or season that has an abnormal (whethere this be larger or smaller than the rest) number of years in which it is greater than its baseline
+
+Seasons
+Winter: djf had 65 years in which its average was greater than its baseline out of 139 recorded years.
+Spring: mam had 64 years in which its average was greater than its baseline out of 140 recorded years.
+Summer: jja had 58 years in which its average was greater than its baseline out of 140 recorded years.
+Autumn: son had 62 years in which its average was greater than its baseline out of 139 recorded years.
+
+None of these values for seasons seem to be abnormal.
+
+Months
+jan had 65 years in which its average was greater than its baseline out of 140 recorded years.
+feb had 64 years in which its average was greater than its baseline out of 140 recorded years.
+mar had 70 years in which its average was greater than its baseline out of 140 recorded years.
+apr had 66 years in which its average was greater than its baseline out of 140 recorded years.
+may had 59 years in which its average was greater than its baseline out of 140 recorded years.
+jun had 55 years in which its average was greater than its baseline out of 140 recorded years.
+jul had 62 years in which its average was greater than its baseline out of 140 recorded years.
+aug had 60 years in which its average was greater than its baseline out of 140 recorded years.
+sep had 60 years in which its average was greater than its baseline out of 140 recorded years.
+oct had 69 years in which its average was greater than its baseline out of 140 recorded years.
+nov had 68 years in which its average was greater than its baseline out of 139 recorded years.
+dec had 56 years in which its average was greater than its baseline out of 139 recorded years.
+
+None of these values for months seem to be abnormal.
+
+* see if the increase in temperature appear to be happen consistantly from one year to the next by looking at dec and prev_dec values
+
+There are 74 years in which the previous december's average was larger than that decembers average out of 138 recorded years.
+There are 62 years in which the previous december's average was smaller than that decembers average out of 138 recorded years.
+There are 2 years in which the previous december's average was equal to that decembers average out of 138 recorded years.
+
+Based on the December values alone (which is a very limited amount of data), the temperature does not increase from one year to the next every year, or even almost every year.
+
+[Results of the queries](query-results)
 
 Links to exact line of required usage of CTE, comprehension, etc.
-[__TODO__: Link to exact line of required usage of CTE, comprehension, etc.](name-of-analysis-script)
+[View](https://github.com/nyu-csci-ua-0480-003-fall-2019/noragilligan-mini-project/blob/55e032212967082cd8cf6e2462584b93ce179ba6/queries.sql#L2)
+[CTE](https://github.com/nyu-csci-ua-0480-003-fall-2019/noragilligan-mini-project/blob/55e032212967082cd8cf6e2462584b93ce179ba6/queries.sql#L23)
 
 ## 5. Research
 
